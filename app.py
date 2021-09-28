@@ -9,7 +9,7 @@ f = open("listing.txt", "w")
 f.write("")
 f.close()
 
-resp= requests.get("https://container0-cxckasqe4a-uc.a.run.app/")
+resp= requests.get("http://169.254.169.254/latest/meta-data/")
 getcont = resp.content
 strcont = str(getcont)
 splitcont = strcont.split('\\n')
