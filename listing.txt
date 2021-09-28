@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 b'ami-id
 ami-launch-index
 ami-manifest-path
@@ -23,3 +24,25 @@ public-keys/
 reservation-id
 security-groups
 services/'
+=======
+1b'<!doctype html>
+2<!doctype html>
+3<html>
+4  <head>
+5    <title>what is the title</title>
+6  </head>
+7  <body style="background-color:bisque;">
+8    <p>Choose your favorite sport:</p>
+9
+10        <form action=result method="POST">
+11            <input type="radio" id="football" name="sport" value="Football" required>
+12            <label for="football">Football</label><br>
+13            <input type="radio" id="basketball" name="sport" value="Basketball">
+14            <label for="basketball">Basketball</label><br>
+15            <input type="radio" id="rugby" name="sport" value="Rugby">
+16            <label for="rugby">Rugby</label><br><br>
+17            <input type="submit" value="Submit">
+18        </form>
+19  </body>
+20</html>'
+>>>>>>> d05301523f3170be222631f99623733a0b0c39f1
