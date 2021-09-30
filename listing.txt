@@ -1,20 +1,25 @@
-1<!doctype html>
-2<!doctype html>
-3<html>
-4  <head>
-5    <title>what is the title</title>
-6  </head>
-7  <body style="background-color:bisque;">
-8    <p>Choose your favorite sport:</p>
-9
-10        <form action=result method="POST">
-11            <input type="radio" id="football" name="sport" value="Football" required>
-12            <label for="football">Football</label><br>
-13            <input type="radio" id="basketball" name="sport" value="Basketball">
-14            <label for="basketball">Basketball</label><br>
-15            <input type="radio" id="rugby" name="sport" value="Rugby">
-16            <label for="rugby">Rugby</label><br><br>
-17            <input type="submit" value="Submit">
-18        </form>
-19  </body>
-20</html>
+1ami-id
+2ami-launch-index
+3ami-manifest-path
+4block-device-mapping/
+5events/
+6hostname
+7identity-credentials/
+8instance-action
+9instance-id
+10instance-life-cycle
+11instance-type
+12local-hostname
+13local-ipv4
+14mac
+15managed-ssh-keys/
+16metrics/
+17network/
+18placement/
+19profile
+20public-hostname
+21public-ipv4
+22public-keys/
+23reservation-id
+24security-groups
+25services/
