@@ -1,31 +1,4 @@
-<<<<<<< HEAD
-b'ami-id
-ami-launch-index
-ami-manifest-path
-block-device-mapping/
-events/
-hostname
-identity-credentials/
-instance-action
-instance-id
-instance-life-cycle
-instance-type
-local-hostname
-local-ipv4
-mac
-managed-ssh-keys/
-metrics/
-network/
-placement/
-profile
-public-hostname
-public-ipv4
-public-keys/
-reservation-id
-security-groups
-services/'
-=======
-1b'<!doctype html>
+1<!doctype html>
 2<!doctype html>
 3<html>
 4  <head>
@@ -44,5 +17,4 @@ services/'
 17            <input type="submit" value="Submit">
 18        </form>
 19  </body>
-20</html>'
->>>>>>> d05301523f3170be222631f99623733a0b0c39f1
+20</html>
