@@ -36,7 +36,7 @@ for item in splitcont:
 i=1
 for wrtcont in splitcont:
     f = open("listing.txt", "a")
-    f.write(str(i) + wrtcont + "\n")
+    f.write(str(i) + " "  + wrtcont + "\n")
     i +=1
 f.close()
 
@@ -45,7 +45,12 @@ while True:
         
         metaindex = int(input("Please enter the number of the Metadata that you wish to fetch from the list above or ctrl+c to exit: "))
         if metaindex > 0 and metaindex <= len(splitcont):
-            break
+	    temp = conttodic[metaindex]
+            fulurl= "http://169.254.169.254/latest/meta-data/"+ str(temp)
+            resp2= requests.get("http://169.254.169.254/latest/meta-data/")
+	    getcont2 = resp2.content
+	    getcont2 = getcont2.decode('utf-8')
+	    print (fulurl)
         else:
             print( metaindex , "is out of the index range ")   
     except KeyboardInterrupt:
