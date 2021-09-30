@@ -13,7 +13,7 @@ f.close()
 
 # request the list of metadata and convert it to string then split the content in to list 
 
-resp= requests.get("https://container0-cxckasqe4a-uc.a.run.app/")
+resp= requests.get("http://169.254.169.254/latest/meta-data/")
 
 getcont = resp.content
 getcont =getcont.decode('utf-8')
