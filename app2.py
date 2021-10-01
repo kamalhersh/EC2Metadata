@@ -45,12 +45,14 @@ while True:
         
         metaindex = int(input("Please enter the number of the Metadata that you wish to fetch from the list above or ctrl+c to exit: "))
         if metaindex > 0 and metaindex <= len(splitcont):
-	    temp = conttodic[metaindex]
-            fulurl= "http://169.254.169.254/latest/meta-data/"+ str(temp)
+            temp = conttodic[metaindex]
+            fulurl = "http://169.254.169.254/latest/meta-data/{}"
             resp2= requests.get("http://169.254.169.254/latest/meta-data/")
-	    getcont2 = resp2.content
-	    getcont2 = getcont2.decode('utf-8')
-	    print (fulurl)
+            getcont2 = resp2.content
+            getcont2 = getcont2.decode('utf-8')
+            print(getcont2)
+                        
+	        
         else:
             print( metaindex , "is out of the index range ")   
     except KeyboardInterrupt:
