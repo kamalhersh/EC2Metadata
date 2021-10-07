@@ -47,7 +47,7 @@ while True:
         if metaindex > 0 and metaindex <= len(splitcont):
             temp = conttodic[metaindex]
             fulurl = "http://169.254.169.254/latest/meta-data/{}"
-            resp2= requests.get("http://169.254.169.254/latest/meta-data/")
+            resp2= requests.get(fulurl.format(temp))
             getcont2 = resp2.content
             getcont2 = getcont2.decode('utf-8')
             print(getcont2)
